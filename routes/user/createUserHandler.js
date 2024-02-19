@@ -7,7 +7,7 @@ const createUserHandler = async(req, res) => {
         email: req.body.email
     }
     await createUser(data)
-    res.status(201).send({success: true, message: 'User created successfully'})
+    res.send({success: true, message: 'User created Successfully'})
 }
 
 module.exports = createUserHandler

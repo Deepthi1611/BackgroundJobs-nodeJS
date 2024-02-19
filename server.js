@@ -7,5 +7,10 @@ require("dotenv").config({ path: envPath });
 app.listen(process.env.PORT || 3000, () => {
     console.log(`server started on ${process.env.PORT || 3000}`)
 })
+
 const router = require('./routes/index')
 app.use("/",router)
+
+//import arena
+const arenaMiddleware = require("./appQueues/arenaConfig")
+app.use("/", arenaMiddleware)

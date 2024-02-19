@@ -9,12 +9,12 @@ const initialiseQueues = async() => {
     const queueName = queueNames[queueNameKey]
     console.log(`Creating queue instance for queue name: "${queueName}"`)
     const queueInstance = new Queue(queueName, config.url)
-    console.log(config.url)
     queues[queueName] = queueInstance
     await queueInstance.isReady()
     console.log(`Queue "${queueName}" is ready to process the job`)
   })
 await Promise.all(queuesCreationPromise);
 }
+
 initialiseQueues()
 module.exports = queues

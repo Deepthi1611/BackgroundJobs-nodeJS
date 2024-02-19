@@ -2,7 +2,7 @@ POST http://localhost:3004/user
 Content-Type: application/json
 
 {
-    "firstName": "Sobha",
+    "firstName": "Deepthi",
     "lastName": "Purijala",
-    "email": "sobhapurijala@gmail.com"
+    "email": "deepthipurijala@gmail.com"
 }
