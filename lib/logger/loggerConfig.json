@@ -1,0 +1,9 @@
+{
+    "logger": {
+      "filename": "logs/cl-%ENVIRONMENT%-%DATE%.log",
+      "datePattern": "YYYY-MM-DD-HH",
+      "zippedArchive": true,
+      "maxSize": "20m",
+      "maxFiles": "7d"
+    }
+  }

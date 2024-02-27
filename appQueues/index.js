@@ -2,7 +2,7 @@ const emailWorker =  require("./emailWorker");
 const queueNames = require("./queueNames")
 const queues = require("./queueManager")
 const cron = require("node-cron");
-const { where, Op } = require("sequelize");
+const { Op } = require("sequelize");
 const models = require("../models")
 
 function bootstrap() {
